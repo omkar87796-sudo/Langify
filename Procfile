@@ -1,1 +1,1 @@
-web: gunicorn flask_app:app
+web: uvicorn fastapi_server:app --host 0.0.0.0 --port $PORT
